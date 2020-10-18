@@ -42,6 +42,21 @@ struct ContentView: View {
                 label: {Text("Color Gradients").font(.title2)})
                 .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
             
+            NavigationLink(
+                destination: RedactedView(),
+                label: {Text("Redacted").font(.title2)})
+                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
+            
+            NavigationLink(
+                destination: DatePickerView(),
+                label: {Text("DatePicker").font(.title2)})
+                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
+            
+            NavigationLink(
+                destination: ColorPickerView(),
+                label: {Text("ColorPicker").font(.title2)})
+                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
+            
         }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
         }.edgesIgnoringSafeArea(.top)
     }

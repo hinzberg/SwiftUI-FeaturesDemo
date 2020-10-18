@@ -4,6 +4,11 @@ This is a test project to try out new features in SwiftUI. The project will be e
 
 ## Changelog / History
 
+**Version 1.1 (2020-10-18)**
+- Redacted
+- DatePicker
+- ColorPicker
+
 **Version 1.0 (2020-07-27)**
 
 - First public release includes
