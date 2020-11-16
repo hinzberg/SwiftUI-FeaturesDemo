@@ -4,6 +4,10 @@ This is a test project to try out new features in SwiftUI. The project will be e
 
 ## Changelog / History
 
+**Version 1.2 (2020-11-16)**
+- Haptic Feedback
+- Reuseable Button Styles
+
 **Version 1.1 (2020-10-18)**
 - Redacted
 - DatePicker

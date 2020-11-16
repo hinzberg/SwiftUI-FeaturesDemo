@@ -21,6 +21,11 @@
 		3FA3047224B07AC400884863 /* AnimatedGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3047124B07AC400884863 /* AnimatedGridView.swift */; };
 		3FA3047524B0881400884863 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3047424B0881400884863 /* OutlineGroupView.swift */; };
 		3FA3047A24B0AD1A00884863 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3047924B0AD1A00884863 /* DisclosureGroupView.swift */; };
+		3FBC13DD256263A4004FAE0A /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13DC256263A4004FAE0A /* HapticView.swift */; };
+		3FBC13E5256263C0004FAE0A /* HapticController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13E4256263C0004FAE0A /* HapticController.swift */; };
+		3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */; };
+		3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */; };
+		3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */; };
 		3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE4686253C83F10065782E /* DatePickerView.swift */; };
 		3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE4692253C92140065782E /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +68,11 @@
 		3FA3047124B07AC400884863 /* AnimatedGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGridView.swift; sourceTree = "<group>"; };
 		3FA3047424B0881400884863 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		3FA3047924B0AD1A00884863 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
+		3FBC13DC256263A4004FAE0A /* HapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
+		3FBC13E4256263C0004FAE0A /* HapticController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticController.swift; sourceTree = "<group>"; };
+		3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseStyleView.swift; sourceTree = "<group>"; };
+		3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorButtonStyle.swift; sourceTree = "<group>"; };
 		3FFE4686253C83F10065782E /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		3FFE4692253C92140065782E /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +152,8 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3FBC13EC2562813E004FAE0A /* ReuseStyles */,
+				3FBC13DB2562637A004FAE0A /* Haptic */,
 				3FFE468E253C91EC0065782E /* ColorPicker */,
 				3FFE4685253C83D70065782E /* DatePicker */,
 				3F16180624D8905D006DA574 /* Redacted */,
@@ -206,6 +218,25 @@
 				3FA3047924B0AD1A00884863 /* DisclosureGroupView.swift */,
 			);
 			path = DisclosureGroup;
+			sourceTree = "<group>";
+		};
+		3FBC13DB2562637A004FAE0A /* Haptic */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC13DC256263A4004FAE0A /* HapticView.swift */,
+				3FBC13E4256263C0004FAE0A /* HapticController.swift */,
+			);
+			path = Haptic;
+			sourceTree = "<group>";
+		};
+		3FBC13EC2562813E004FAE0A /* ReuseStyles */ = {
+			isa = PBXGroup;
+			children = (
+				3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */,
+				3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */,
+				3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */,
+			);
+			path = ReuseStyles;
 			sourceTree = "<group>";
 		};
 		3FFE4685253C83D70065782E /* DatePicker */ = {
@@ -354,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBC13E5256263C0004FAE0A /* HapticController.swift in Sources */,
 				3FA3044824B076EB00884863 /* ContentView.swift in Sources */,
 				3F16180824D89079006DA574 /* RedactedView.swift in Sources */,
 				3FA3047524B0881400884863 /* OutlineGroupView.swift in Sources */,
@@ -361,10 +393,14 @@
 				3FA3047224B07AC400884863 /* AnimatedGridView.swift in Sources */,
 				3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */,
 				3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */,
+				3FBC13DD256263A4004FAE0A /* HapticView.swift in Sources */,
 				3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */,
 				3FA3047A24B0AD1A00884863 /* DisclosureGroupView.swift in Sources */,
 				3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */,
+				3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */,
 				3F14620124CC2F27007F0514 /* GradientView.swift in Sources */,
+				3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */,
+				3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -553,6 +590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

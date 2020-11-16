@@ -1,9 +1,6 @@
-//
 //  ContentView.swift
 //  SwiftUI-FeaturesDemo
-//
 //  Created by Holger Hinzberg on 04.07.20.
-//
 
 import SwiftUI
 
@@ -55,6 +52,16 @@ struct ContentView: View {
             NavigationLink(
                 destination: ColorPickerView(),
                 label: {Text("ColorPicker").font(.title2)})
+                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
+            
+            NavigationLink(
+                destination: HapticView(),
+                label: {Text("Haptic Feedback").font(.title2)})
+                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
+            
+            NavigationLink(
+                destination: ReuseStyleView(),
+                label: {Text("Reuseable Styles").font(.title2)})
                 .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
             
         }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
