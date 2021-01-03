@@ -6,66 +6,39 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init() {
-    }
-        
+    @ObservedObject var repo = SubViewRepository()
+    //  Text for the SearchBar
+    @State private var searchQuery: String = ""
+
     var body: some View {
         
         NavigationView{
-        List {
+            VStack{
+                
+                TableSearchBar(text: self.$searchQuery)
+               
+                List {
+                    ForEach(repo.Filter(searchQuery: searchQuery), id:\.self.id) { item in
+                        NavigationLink(destination: AnyView(_fromValue: item.view))
+                        {
+                            TableCell(text: item.viewTitle)
+                        }
+                    }
+                }.listStyle(PlainListStyle())
 
-            NavigationLink(
-                destination: AnimatedGridView(),
-                label: {Text("Animated Grid (matchedGeometryEffect)").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
+            }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
+        }
+    }
+}
 
-            NavigationLink(
-                destination: DisclosureGroupView(),
-                label: {Text("DisclosureGroup").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: GridView(),
-                label: {Text("Grid with ScrollView and Section").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: OutlineGroupView(),
-                label: {Text("OutlineGroup").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: GradientView(),
-                label: {Text("Color Gradients").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: RedactedView(),
-                label: {Text("Redacted").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: DatePickerView(),
-                label: {Text("DatePicker").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: ColorPickerView(),
-                label: {Text("ColorPicker").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: HapticView(),
-                label: {Text("Haptic Feedback").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-            NavigationLink(
-                destination: ReuseStyleView(),
-                label: {Text("Reuseable Styles").font(.title2)})
-                .listRowInsets(EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 10))
-            
-        }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
-        }.edgesIgnoringSafeArea(.top)
+struct TableCell: View {
+    @State var text : String
+    
+    var body: some View {
+            VStack (alignment: .leading)
+            {
+                Text(self.text).font(.body).foregroundColor(Color.primary)
+            }
     }
 }
 

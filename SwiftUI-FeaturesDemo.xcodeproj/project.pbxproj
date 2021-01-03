@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0D987A259BB6460048C58E /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D9879259BB6460048C58E /* AppStorageView.swift */; };
 		3F14620124CC2F27007F0514 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14620024CC2F27007F0514 /* GradientView.swift */; };
 		3F16180824D89079006DA574 /* RedactedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16180724D89079006DA574 /* RedactedView.swift */; };
+		3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22AA3A25A211B700C9081A /* SimpleList.swift */; };
 		3F4DD84424CF636B009D7DC3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DD84324CF636B009D7DC3 /* README.md */; };
+		3F6C93EC259F6B1800D72BF0 /* TableSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */; };
 		3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC224C6243D00CFA28E /* GridView.swift */; };
 		3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC424C6270D00CFA28E /* RandomColor.swift */; };
 		3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3044524B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift */; };
@@ -26,6 +29,7 @@
 		3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */; };
 		3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */; };
 		3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */; };
+		3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */; };
 		3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE4686253C83F10065782E /* DatePickerView.swift */; };
 		3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE4692253C92140065782E /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
@@ -48,9 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0D9879259BB6460048C58E /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 		3F14620024CC2F27007F0514 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3F16180724D89079006DA574 /* RedactedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedView.swift; sourceTree = "<group>"; };
+		3F22AA3A25A211B700C9081A /* SimpleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleList.swift; sourceTree = "<group>"; };
 		3F4DD84324CF636B009D7DC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSearchBar.swift; sourceTree = "<group>"; };
 		3FA1ACC224C6243D00CFA28E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		3FA1ACC424C6270D00CFA28E /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		3FA3044224B076EB00884863 /* SwiftUI-FeaturesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-FeaturesDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +80,7 @@
 		3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseStyleView.swift; sourceTree = "<group>"; };
 		3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorButtonStyle.swift; sourceTree = "<group>"; };
+		3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewRepository.swift; sourceTree = "<group>"; };
 		3FFE4686253C83F10065782E /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		3FFE4692253C92140065782E /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0D9878259BB6140048C58E /* AppStorage */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D9879259BB6460048C58E /* AppStorageView.swift */,
+			);
+			path = AppStorage;
+			sourceTree = "<group>";
+		};
 		3F1461FF24CC2F0A007F0514 /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +134,14 @@
 			path = Redacted;
 			sourceTree = "<group>";
 		};
+		3F22AA4225A21A4500C9081A /* SimpleList */ = {
+			isa = PBXGroup;
+			children = (
+				3F22AA3A25A211B700C9081A /* SimpleList.swift */,
+			);
+			path = SimpleList;
+			sourceTree = "<group>";
+		};
 		3FA1ACC124C6242600CFA28E /* Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				3F4DD84324CF636B009D7DC3 /* README.md */,
+				3FA3044524B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift */,
+				3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */,
 				3FA3044724B076EB00884863 /* ContentView.swift */,
 				3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */,
 				3FA3045624B076EC00884863 /* SwiftUI-FeaturesDemoTests */,
@@ -152,6 +178,9 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F22AA4225A21A4500C9081A /* SimpleList */,
+				3FD0FA54259BCA8500BF4BD4 /* DataModel */,
+				3F0D9878259BB6140048C58E /* AppStorage */,
 				3FBC13EC2562813E004FAE0A /* ReuseStyles */,
 				3FBC13DB2562637A004FAE0A /* Haptic */,
 				3FFE468E253C91EC0065782E /* ColorPicker */,
@@ -162,7 +191,6 @@
 				3FA3047824B0ACF000884863 /* DisclosureGroup */,
 				3FA3047324B0880100884863 /* OutlineGroup */,
 				3FA3047024B07A7D00884863 /* Animated Grid */,
-				3FA3044524B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift */,
 				3FA3044924B076EC00884863 /* Assets.xcassets */,
 				3FA3044E24B076EC00884863 /* Info.plist */,
 				3FA3044B24B076EC00884863 /* Preview Content */,
@@ -237,6 +265,14 @@
 				3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */,
 			);
 			path = ReuseStyles;
+			sourceTree = "<group>";
+		};
+		3FD0FA54259BCA8500BF4BD4 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		3FFE4685253C83D70065782E /* DatePicker */ = {
@@ -386,13 +422,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBC13E5256263C0004FAE0A /* HapticController.swift in Sources */,
+				3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */,
 				3FA3044824B076EB00884863 /* ContentView.swift in Sources */,
 				3F16180824D89079006DA574 /* RedactedView.swift in Sources */,
 				3FA3047524B0881400884863 /* OutlineGroupView.swift in Sources */,
 				3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */,
+				3F0D987A259BB6460048C58E /* AppStorageView.swift in Sources */,
 				3FA3047224B07AC400884863 /* AnimatedGridView.swift in Sources */,
+				3F6C93EC259F6B1800D72BF0 /* TableSearchBar.swift in Sources */,
 				3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */,
 				3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */,
+				3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */,
 				3FBC13DD256263A4004FAE0A /* HapticView.swift in Sources */,
 				3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */,
 				3FA3047A24B0AD1A00884863 /* DisclosureGroupView.swift in Sources */,

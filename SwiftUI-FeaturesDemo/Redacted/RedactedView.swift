@@ -25,9 +25,9 @@ struct RedactedView: View {
                 Text("ZIP Code and City")
             }.redacted(reason:  isRedacted ? .placeholder : .init())
             
-            Toggle(isOn: $isRedacted) {
-                Text("Redacted")
-            }.padding()
+            Toggle("Redacted", isOn: $isRedacted)
+                .toggleStyle(SwitchToggleStyle(tint: Color(UIColor.systemBlue)))
+            .padding()
         }
     }
 }
