@@ -6,18 +6,23 @@ import SwiftUI
 
 struct SimpleList: View {
     
+    @State var searchQuery = ""
     let cities = ["Berlin","Paris", "London","Tokio","Amsterdam","Madrid","Hong Kong","New York", "Bern", "Delhi", "Shanghai"]
     
     var body: some View {
-        
-        VStack (alignment: .leading) {
+        VStack {
+            
+            TextField("This is not a Searchbar", text: $searchQuery)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(EdgeInsets(top: 10, leading: 10, bottom: 2, trailing: 10))
+            
             List{
                 ForEach(self.cities.sorted() , id: \.self)   { city in
                     Text(city)
                 }
             }.listStyle(PlainListStyle())
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+        }.navigationBarTitle("SwiftUI List Demo", displayMode: .inline)
+        //.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

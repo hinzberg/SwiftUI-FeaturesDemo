@@ -21,10 +21,13 @@ struct ContentView: View {
                     ForEach(repo.Filter(searchQuery: searchQuery), id:\.self.id) { item in
                         NavigationLink(destination: AnyView(_fromValue: item.view))
                         {
-                            TableCell(text: item.viewTitle)
+                            Text(item.viewTitle)
+                                .font(.body)
+                                .foregroundColor(Color.primary)
                         }
                     }
-                }.listStyle(PlainListStyle())
+                }
+                .listStyle(PlainListStyle())
 
             }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
         }
