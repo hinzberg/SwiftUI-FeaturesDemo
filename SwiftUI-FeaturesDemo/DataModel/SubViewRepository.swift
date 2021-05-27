@@ -61,6 +61,9 @@ class  SubViewRepository : ObservableObject  {
         data = SubViewData(view: SimpleList(), viewTitle: "List (Simple)")
         list.append(data)
         
+        data = SubViewData(view: AuroraView(), viewTitle: "AuroraView")
+        list.append(data)
+        
         // list.sort(by: { $0.viewTitle < $1.viewTitle})
     }
     

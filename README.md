@@ -4,6 +4,9 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 
 ## Changelog / History
 
+**Version 1.4 (2021-05-27)**
+- AuroraView (by Cephalopod Studio)
+
 **Version 1.3 (2021-01-03)**
 - App Icon
 - @AppStorage
