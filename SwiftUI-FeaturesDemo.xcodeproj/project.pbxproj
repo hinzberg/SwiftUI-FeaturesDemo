@@ -15,6 +15,8 @@
 		3F59CDCB26601D9800EA9800 /* AuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCA26601D9800EA9800 /* AuroraView.swift */; };
 		3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */; };
 		3F6C93EC259F6B1800D72BF0 /* TableSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */; };
+		3F6EABA3266A06440057159C /* BlurViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EABA2266A06440057159C /* BlurViewSample.swift */; };
+		3F6EABA5266A06570057159C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EABA4266A06570057159C /* BlurView.swift */; };
 		3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC224C6243D00CFA28E /* GridView.swift */; };
 		3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC424C6270D00CFA28E /* RandomColor.swift */; };
 		3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3044524B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift */; };
@@ -62,6 +64,8 @@
 		3F59CDCA26601D9800EA9800 /* AuroraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraView.swift; sourceTree = "<group>"; };
 		3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTheme.swift; sourceTree = "<group>"; };
 		3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSearchBar.swift; sourceTree = "<group>"; };
+		3F6EABA2266A06440057159C /* BlurViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewSample.swift; sourceTree = "<group>"; };
+		3F6EABA4266A06570057159C /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		3FA1ACC224C6243D00CFA28E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		3FA1ACC424C6270D00CFA28E /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		3FA3044224B076EB00884863 /* SwiftUI-FeaturesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-FeaturesDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +159,15 @@
 			path = AuroraBackground;
 			sourceTree = "<group>";
 		};
+		3F6EABA1266A061C0057159C /* BlurView */ = {
+			isa = PBXGroup;
+			children = (
+				3F6EABA2266A06440057159C /* BlurViewSample.swift */,
+				3F6EABA4266A06570057159C /* BlurView.swift */,
+			);
+			path = BlurView;
+			sourceTree = "<group>";
+		};
 		3FA1ACC124C6242600CFA28E /* Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +204,7 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F6EABA1266A061C0057159C /* BlurView */,
 				3F59CDC926601D7400EA9800 /* AuroraBackground */,
 				3F22AA4225A21A4500C9081A /* SimpleList */,
 				3FD0FA54259BCA8500BF4BD4 /* DataModel */,
@@ -439,6 +453,7 @@
 				3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */,
 				3FA3044824B076EB00884863 /* ContentView.swift in Sources */,
 				3F16180824D89079006DA574 /* RedactedView.swift in Sources */,
+				3F6EABA3266A06440057159C /* BlurViewSample.swift in Sources */,
 				3FA3047524B0881400884863 /* OutlineGroupView.swift in Sources */,
 				3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */,
 				3F0D987A259BB6460048C58E /* AppStorageView.swift in Sources */,
@@ -451,6 +466,7 @@
 				3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */,
 				3FA3047A24B0AD1A00884863 /* DisclosureGroupView.swift in Sources */,
 				3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */,
+				3F6EABA5266A06570057159C /* BlurView.swift in Sources */,
 				3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */,
 				3F59CDCB26601D9800EA9800 /* AuroraView.swift in Sources */,
 				3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */,
@@ -623,7 +639,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -646,7 +662,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
