@@ -67,7 +67,8 @@ class  SubViewRepository : ObservableObject  {
         data = SubViewData(view: BlurViewSample(), viewTitle: "BlurView")
         list.append(data)
         
-        // list.sort(by: { $0.viewTitle < $1.viewTitle})
+        data = SubViewData(view: HeroAnimationView(), viewTitle: "Hero Animation")
+        list.append(data)
     }
     
     func Filter(searchQuery:String) -> [SubViewData]

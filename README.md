@@ -4,6 +4,9 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 
 ## Changelog / History
 
+**Version 1.4.2 (2021-09-04)**
+- Hero Animation with matchedGeometryEffect, based on a tutorial by Mohammad Azam
+
 **Version 1.4.1 (2021-06-04)**
 - BlurView (by iOS Academy)
 

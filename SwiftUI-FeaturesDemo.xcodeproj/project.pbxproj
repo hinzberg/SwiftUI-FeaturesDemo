@@ -33,6 +33,7 @@
 		3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */; };
 		3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */; };
 		3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */; };
+		3FC9914126E3FF1D0058BB72 /* HeroAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9914026E3FF1D0058BB72 /* HeroAnimationView.swift */; };
 		3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */; };
 		3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE4686253C83F10065782E /* DatePickerView.swift */; };
 		3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE4692253C92140065782E /* ColorPickerView.swift */; };
@@ -88,6 +89,7 @@
 		3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseStyleView.swift; sourceTree = "<group>"; };
 		3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorButtonStyle.swift; sourceTree = "<group>"; };
+		3FC9914026E3FF1D0058BB72 /* HeroAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnimationView.swift; sourceTree = "<group>"; };
 		3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewRepository.swift; sourceTree = "<group>"; };
 		3FFE4686253C83F10065782E /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		3FFE4692253C92140065782E /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3FC9913F26E3FEFC0058BB72 /* Hero Animation */,
 				3F6EABA1266A061C0057159C /* BlurView */,
 				3F59CDC926601D7400EA9800 /* AuroraBackground */,
 				3F22AA4225A21A4500C9081A /* SimpleList */,
@@ -293,6 +296,14 @@
 				3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */,
 			);
 			path = ReuseStyles;
+			sourceTree = "<group>";
+		};
+		3FC9913F26E3FEFC0058BB72 /* Hero Animation */ = {
+			isa = PBXGroup;
+			children = (
+				3FC9914026E3FF1D0058BB72 /* HeroAnimationView.swift */,
+			);
+			path = "Hero Animation";
 			sourceTree = "<group>";
 		};
 		3FD0FA54259BCA8500BF4BD4 /* DataModel */ = {
@@ -453,6 +464,7 @@
 				3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */,
 				3FA3044824B076EB00884863 /* ContentView.swift in Sources */,
 				3F16180824D89079006DA574 /* RedactedView.swift in Sources */,
+				3FC9914126E3FF1D0058BB72 /* HeroAnimationView.swift in Sources */,
 				3F6EABA3266A06440057159C /* BlurViewSample.swift in Sources */,
 				3FA3047524B0881400884863 /* OutlineGroupView.swift in Sources */,
 				3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */,
@@ -639,7 +651,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -662,7 +674,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.4.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
