@@ -21,6 +21,7 @@ struct MaterialsView: View {
                         Label(container.materialName ,systemImage: "bolt.heart.fill")
                             .font(.largeTitle)
                             .padding()
+                            .tint(.yellow)
                         
                         Spacer()
                     }.background(container.material)

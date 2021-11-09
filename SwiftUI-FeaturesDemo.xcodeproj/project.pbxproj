@@ -17,7 +17,6 @@
 		3F4DD84424CF636B009D7DC3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DD84324CF636B009D7DC3 /* README.md */; };
 		3F59CDCB26601D9800EA9800 /* AuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCA26601D9800EA9800 /* AuroraView.swift */; };
 		3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */; };
-		3F6C93EC259F6B1800D72BF0 /* TableSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */; };
 		3F6EABA3266A06440057159C /* BlurViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EABA2266A06440057159C /* BlurViewSample.swift */; };
 		3F6EABA5266A06570057159C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EABA4266A06570057159C /* BlurView.swift */; };
 		3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC224C6243D00CFA28E /* GridView.swift */; };
@@ -70,7 +69,6 @@
 		3F4DD84324CF636B009D7DC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F59CDCA26601D9800EA9800 /* AuroraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraView.swift; sourceTree = "<group>"; };
 		3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTheme.swift; sourceTree = "<group>"; };
-		3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSearchBar.swift; sourceTree = "<group>"; };
 		3F6EABA2266A06440057159C /* BlurViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewSample.swift; sourceTree = "<group>"; };
 		3F6EABA4266A06570057159C /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		3FA1ACC224C6243D00CFA28E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 			children = (
 				3F4DD84324CF636B009D7DC3 /* README.md */,
 				3FA3044524B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift */,
-				3F6C93EB259F6B1800D72BF0 /* TableSearchBar.swift */,
 				3FA3044724B076EB00884863 /* ContentView.swift */,
 				3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */,
 				3FA3045624B076EC00884863 /* SwiftUI-FeaturesDemoTests */,
@@ -487,7 +484,6 @@
 				3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */,
 				3F0D987A259BB6460048C58E /* AppStorageView.swift in Sources */,
 				3FA3047224B07AC400884863 /* AnimatedGridView.swift in Sources */,
-				3F6C93EC259F6B1800D72BF0 /* TableSearchBar.swift in Sources */,
 				3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */,
 				3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */,
 				3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */,

@@ -8,17 +8,28 @@ struct ContentView: View {
     
     @ObservedObject var repo = SubViewRepository()
     //  Text for the SearchBar
-    @State private var searchQuery: String = ""
+    @State private var searchText: String = ""
+
+    init() {
+        let customAppearance = UINavigationBarAppearance()
+        // Backgroundcolor
+        customAppearance.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 1.0, alpha: 1)
+        // Font color for navigationBarTitleDisplayMode large
+        customAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.systemBlue]
+        // Font color for navigationBarTitleDisplayMode inline
+        customAppearance.titleTextAttributes = [.foregroundColor: UIColor.systemBlue]
+        
+        UINavigationBar.appearance().standardAppearance = customAppearance
+        UINavigationBar.appearance().compactAppearance = customAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = customAppearance
+    }
 
     var body: some View {
         
         NavigationView{
             VStack{
-                
-                TableSearchBar(text: self.$searchQuery)
-               
                 List {
-                    ForEach(repo.Filter(searchQuery: searchQuery), id:\.self.id) { item in
+                    ForEach(repo.Filter(searchQuery: searchText), id:\.self.id) { item in
                         NavigationLink(destination: AnyView(_fromValue: item.view))
                         {
                             Text(item.viewTitle)
@@ -28,6 +39,13 @@ struct ContentView: View {
                     }
                 }
                 .listStyle(PlainListStyle())
+                .searchable(
+                    text: $searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: "Search something...")
+                    .onChange(of: searchText) { searchText in
+                    print(searchText)
+                }
 
             }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
         }
