@@ -4,6 +4,11 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 
 ## Changelog / History
 
+**Version 1.4.3 (2021-11-09)**
+- Materials View added
+- Searchable for List added
+- Color and styling changed
+
 **Version 1.4.2 (2021-09-04)**
 - Hero Animation with matchedGeometryEffect, based on a tutorial by Mohammad Azam
 
