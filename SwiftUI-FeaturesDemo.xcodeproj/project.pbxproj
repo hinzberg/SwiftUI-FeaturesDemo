@@ -11,6 +11,9 @@
 		3F14620124CC2F27007F0514 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14620024CC2F27007F0514 /* GradientView.swift */; };
 		3F16180824D89079006DA574 /* RedactedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16180724D89079006DA574 /* RedactedView.swift */; };
 		3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22AA3A25A211B700C9081A /* SimpleList.swift */; };
+		3F38050A273AD83400DB23CB /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F380509273AD83400DB23CB /* MaterialsView.swift */; };
+		3F38050C273AD9E900DB23CB /* MaterialContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38050B273AD9E900DB23CB /* MaterialContainer.swift */; };
+		3F38050E273ADA4600DB23CB /* MaterialContainerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38050D273ADA4600DB23CB /* MaterialContainerRepository.swift */; };
 		3F4DD84424CF636B009D7DC3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3F4DD84324CF636B009D7DC3 /* README.md */; };
 		3F59CDCB26601D9800EA9800 /* AuroraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCA26601D9800EA9800 /* AuroraView.swift */; };
 		3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */; };
@@ -61,6 +64,9 @@
 		3F14620024CC2F27007F0514 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3F16180724D89079006DA574 /* RedactedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedView.swift; sourceTree = "<group>"; };
 		3F22AA3A25A211B700C9081A /* SimpleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleList.swift; sourceTree = "<group>"; };
+		3F380509273AD83400DB23CB /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
+		3F38050B273AD9E900DB23CB /* MaterialContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialContainer.swift; sourceTree = "<group>"; };
+		3F38050D273ADA4600DB23CB /* MaterialContainerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialContainerRepository.swift; sourceTree = "<group>"; };
 		3F4DD84324CF636B009D7DC3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F59CDCA26601D9800EA9800 /* AuroraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraView.swift; sourceTree = "<group>"; };
 		3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTheme.swift; sourceTree = "<group>"; };
@@ -152,6 +158,16 @@
 			path = SimpleList;
 			sourceTree = "<group>";
 		};
+		3F380508273AD81300DB23CB /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				3F380509273AD83400DB23CB /* MaterialsView.swift */,
+				3F38050B273AD9E900DB23CB /* MaterialContainer.swift */,
+				3F38050D273ADA4600DB23CB /* MaterialContainerRepository.swift */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
 		3F59CDC926601D7400EA9800 /* AuroraBackground */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +222,7 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F380508273AD81300DB23CB /* Materials */,
 				3FC9913F26E3FEFC0058BB72 /* Hero Animation */,
 				3F6EABA1266A061C0057159C /* BlurView */,
 				3F59CDC926601D7400EA9800 /* AuroraBackground */,
@@ -475,8 +492,10 @@
 				3FFE4687253C83F10065782E /* DatePickerView.swift in Sources */,
 				3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */,
 				3FBC13DD256263A4004FAE0A /* HapticView.swift in Sources */,
+				3F38050A273AD83400DB23CB /* MaterialsView.swift in Sources */,
 				3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */,
 				3FA3047A24B0AD1A00884863 /* DisclosureGroupView.swift in Sources */,
+				3F38050C273AD9E900DB23CB /* MaterialContainer.swift in Sources */,
 				3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */,
 				3F6EABA5266A06570057159C /* BlurView.swift in Sources */,
 				3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */,
@@ -484,6 +503,7 @@
 				3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */,
 				3F14620124CC2F27007F0514 /* GradientView.swift in Sources */,
 				3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */,
+				3F38050E273ADA4600DB23CB /* MaterialContainerRepository.swift in Sources */,
 				3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -626,7 +646,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -646,12 +666,12 @@
 				DEVELOPMENT_TEAM = Q4JYUA6UF4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-FeaturesDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
+				MARKETING_VERSION = 1.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -669,12 +689,12 @@
 				DEVELOPMENT_TEAM = Q4JYUA6UF4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-FeaturesDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
+				MARKETING_VERSION = 1.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cocoa-coding.SwiftUI-FeaturesDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -690,7 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4JYUA6UF4;
 				INFOPLIST_FILE = "SwiftUI-FeaturesDemoTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,7 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4JYUA6UF4;
 				INFOPLIST_FILE = "SwiftUI-FeaturesDemoTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
