@@ -44,6 +44,9 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 - OutlineGroup
 
 ## Todo
+- add searchable to SimpleList
+- Update animations to iOS15
+- fix missing icons
 
 ## Known Issues
 

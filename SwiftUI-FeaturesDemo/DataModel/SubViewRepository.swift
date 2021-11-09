@@ -19,10 +19,8 @@ class  SubViewRepository : ObservableObject  {
     private var list = [SubViewData]()
     
     init() {
-        var data = SubViewData(view: HapticView(), viewTitle: "Haptic View")
-        list.append(data)
         
-        data = SubViewData(view: AppStorageView(), viewTitle: "@AppStorage")
+        var data = SubViewData(view: AppStorageView(), viewTitle: "@AppStorage")
         list.append(data)
         
         data = SubViewData(view: AnimatedGridView(), viewTitle: "Animated Grid (matchedGeometryEffect)")
