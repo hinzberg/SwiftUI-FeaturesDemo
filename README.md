@@ -4,6 +4,9 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 
 ## Changelog / History
 
+**2022-08-28**
+- Menu View added
+
 **Version 1.4.3 (2021-11-09)**
 - Materials View added
 - Searchable for List added

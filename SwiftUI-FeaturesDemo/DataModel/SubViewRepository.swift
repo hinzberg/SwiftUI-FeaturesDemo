@@ -70,6 +70,9 @@ class  SubViewRepository : ObservableObject  {
         
         data = SubViewData(view: MaterialsView(), viewTitle: "Materials")
         list.append(data)
+        
+        data = SubViewData(view: MenuView(), viewTitle: "Menu")
+        list.append(data)
     }
     
     func Filter(searchQuery:String) -> [SubViewData]
