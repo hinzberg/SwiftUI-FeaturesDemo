@@ -73,6 +73,9 @@ class  SubViewRepository : ObservableObject  {
         
         data = SubViewData(view: MenuView(), viewTitle: "Menu")
         list.append(data)
+        
+        data = SubViewData(view: ToolbarView(), viewTitle: "Toolbar")
+        list.append(data)
     }
     
     func Filter(searchQuery:String) -> [SubViewData]

@@ -12,12 +12,16 @@ struct ContentView: View {
 
     init() {
         let customAppearance = UINavigationBarAppearance()
+        let appTintColor = UIColor(red: 0.8, green: 0.8, blue: 1.0, alpha: 1)
+        let appNavigationTextColor = UIColor(red: 82 / 255, green: 94 / 255, blue: 145 / 255, alpha: 1)
+        UINavigationBar.appearance().tintColor = appNavigationTextColor
+                
         // Backgroundcolor
-        customAppearance.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 1.0, alpha: 1)
+        customAppearance.backgroundColor = appTintColor
         // Font color for navigationBarTitleDisplayMode large
-        customAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.systemBlue]
+        customAppearance.largeTitleTextAttributes = [.foregroundColor: appNavigationTextColor]
         // Font color for navigationBarTitleDisplayMode inline
-        customAppearance.titleTextAttributes = [.foregroundColor: UIColor.systemBlue]
+        customAppearance.titleTextAttributes = [.foregroundColor: appNavigationTextColor]
         
         UINavigationBar.appearance().standardAppearance = customAppearance
         UINavigationBar.appearance().compactAppearance = customAppearance

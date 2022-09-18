@@ -35,6 +35,7 @@
 		3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */; };
 		3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */; };
 		3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */; };
+		3FC1177C28D7027200D6F42A /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1177B28D7027200D6F42A /* ToolbarView.swift */; };
 		3FC9914126E3FF1D0058BB72 /* HeroAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9914026E3FF1D0058BB72 /* HeroAnimationView.swift */; };
 		3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */; };
 		3FD85FF628BBE27400DE1355 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD85FF528BBE27400DE1355 /* MenuView.swift */; };
@@ -94,6 +95,8 @@
 		3FBC13ED25628159004FAE0A /* ReuseStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseStyleView.swift; sourceTree = "<group>"; };
 		3FBC13F525628763004FAE0A /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorButtonStyle.swift; sourceTree = "<group>"; };
+		3FC1177B28D7027200D6F42A /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		3FC1177D28D71A6500D6F42A /* swiftui_feature_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swiftui_feature_demo.jpg; sourceTree = "<group>"; };
 		3FC9914026E3FF1D0058BB72 /* HeroAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnimationView.swift; sourceTree = "<group>"; };
 		3FD0FA55259BCAAE00BF4BD4 /* SubViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewRepository.swift; sourceTree = "<group>"; };
 		3FD85FF528BBE27400DE1355 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -221,6 +224,7 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3FC1177A28D7025A00D6F42A /* Toolbar */,
 				3FD85FF428BBE26100DE1355 /* Menu */,
 				3F380508273AD81300DB23CB /* Materials */,
 				3FC9913F26E3FEFC0058BB72 /* Hero Animation */,
@@ -240,6 +244,7 @@
 				3FA3047324B0880100884863 /* OutlineGroup */,
 				3FA3047024B07A7D00884863 /* Animated Grid */,
 				3FA3044924B076EC00884863 /* Assets.xcassets */,
+				3FC1177D28D71A6500D6F42A /* swiftui_feature_demo.jpg */,
 				3FA3044E24B076EC00884863 /* Info.plist */,
 				3FA3044B24B076EC00884863 /* Preview Content */,
 			);
@@ -313,6 +318,14 @@
 				3FBC13FA25628B61004FAE0A /* CustomColorButtonStyle.swift */,
 			);
 			path = ReuseStyles;
+			sourceTree = "<group>";
+		};
+		3FC1177A28D7025A00D6F42A /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				3FC1177B28D7027200D6F42A /* ToolbarView.swift */,
+			);
+			path = Toolbar;
 			sourceTree = "<group>";
 		};
 		3FC9913F26E3FEFC0058BB72 /* Hero Animation */ = {
@@ -510,6 +523,7 @@
 				3F59CDCB26601D9800EA9800 /* AuroraView.swift in Sources */,
 				3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */,
 				3F14620124CC2F27007F0514 /* GradientView.swift in Sources */,
+				3FC1177C28D7027200D6F42A /* ToolbarView.swift in Sources */,
 				3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */,
 				3F38050E273ADA4600DB23CB /* MaterialContainerRepository.swift in Sources */,
 				3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */,

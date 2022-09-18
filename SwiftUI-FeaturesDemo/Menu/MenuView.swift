@@ -10,7 +10,6 @@ struct MenuView: View {
             .navigationTitle("Menu")
             .navigationBarItems(
                 trailing:
-                    
                     Menu() {
                         Button("Select", action: select)
                         Button("Remove", action: remove)
