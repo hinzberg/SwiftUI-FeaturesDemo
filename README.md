@@ -4,6 +4,9 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 
 ## Changelog / History
 
+**2023-12-20**
+- Adaptive Text Color added
+
 **2022-09-18**
 - Toolbar View added
 

@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F0D987A259BB6460048C58E /* AppStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D9879259BB6460048C58E /* AppStorageView.swift */; };
 		3F14620124CC2F27007F0514 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14620024CC2F27007F0514 /* GradientView.swift */; };
 		3F16180824D89079006DA574 /* RedactedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16180724D89079006DA574 /* RedactedView.swift */; };
+		3F16ECB928FF157400B6A089 /* TabViewSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16ECB828FF157400B6A089 /* TabViewSampleView.swift */; };
 		3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22AA3A25A211B700C9081A /* SimpleList.swift */; };
+		3F2A183F2B3323EF008A2BAE /* LuminanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A183E2B3323EF008A2BAE /* LuminanceView.swift */; };
+		3F2A18412B332BBD008A2BAE /* Color+Luminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A18402B332BBD008A2BAE /* Color+Luminance.swift */; };
 		3F38050A273AD83400DB23CB /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F380509273AD83400DB23CB /* MaterialsView.swift */; };
 		3F38050C273AD9E900DB23CB /* MaterialContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38050B273AD9E900DB23CB /* MaterialContainer.swift */; };
 		3F38050E273ADA4600DB23CB /* MaterialContainerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F38050D273ADA4600DB23CB /* MaterialContainerRepository.swift */; };
@@ -64,7 +67,10 @@
 		3F0D9879259BB6460048C58E /* AppStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageView.swift; sourceTree = "<group>"; };
 		3F14620024CC2F27007F0514 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3F16180724D89079006DA574 /* RedactedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedView.swift; sourceTree = "<group>"; };
+		3F16ECB828FF157400B6A089 /* TabViewSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewSampleView.swift; sourceTree = "<group>"; };
 		3F22AA3A25A211B700C9081A /* SimpleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleList.swift; sourceTree = "<group>"; };
+		3F2A183E2B3323EF008A2BAE /* LuminanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminanceView.swift; sourceTree = "<group>"; };
+		3F2A18402B332BBD008A2BAE /* Color+Luminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Luminance.swift"; sourceTree = "<group>"; };
 		3F380509273AD83400DB23CB /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
 		3F38050B273AD9E900DB23CB /* MaterialContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialContainer.swift; sourceTree = "<group>"; };
 		3F38050D273ADA4600DB23CB /* MaterialContainerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialContainerRepository.swift; sourceTree = "<group>"; };
@@ -153,12 +159,29 @@
 			path = Redacted;
 			sourceTree = "<group>";
 		};
+		3F16ECB728FF155800B6A089 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F16ECB828FF157400B6A089 /* TabViewSampleView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		3F22AA4225A21A4500C9081A /* SimpleList */ = {
 			isa = PBXGroup;
 			children = (
 				3F22AA3A25A211B700C9081A /* SimpleList.swift */,
 			);
 			path = SimpleList;
+			sourceTree = "<group>";
+		};
+		3F2A183D2B3320ED008A2BAE /* Luminance */ = {
+			isa = PBXGroup;
+			children = (
+				3F2A183E2B3323EF008A2BAE /* LuminanceView.swift */,
+				3F2A18402B332BBD008A2BAE /* Color+Luminance.swift */,
+			);
+			path = Luminance;
 			sourceTree = "<group>";
 		};
 		3F380508273AD81300DB23CB /* Materials */ = {
@@ -224,6 +247,8 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F2A183D2B3320ED008A2BAE /* Luminance */,
+				3F16ECB728FF155800B6A089 /* TabBar */,
 				3FC1177A28D7025A00D6F42A /* Toolbar */,
 				3FD85FF428BBE26100DE1355 /* Menu */,
 				3F380508273AD81300DB23CB /* Materials */,
@@ -430,8 +455,9 @@
 		3FA3043A24B076EB00884863 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3FA3044124B076EB00884863 = {
 						CreatedOnToolsVersion = 12.0;
@@ -520,12 +546,15 @@
 				3F6EABA5266A06570057159C /* BlurView.swift in Sources */,
 				3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */,
 				3FD85FF628BBE27400DE1355 /* MenuView.swift in Sources */,
+				3F2A18412B332BBD008A2BAE /* Color+Luminance.swift in Sources */,
+				3F2A183F2B3323EF008A2BAE /* LuminanceView.swift in Sources */,
 				3F59CDCB26601D9800EA9800 /* AuroraView.swift in Sources */,
 				3FBC13F625628763004FAE0A /* CustomButtonStyle.swift in Sources */,
 				3F14620124CC2F27007F0514 /* GradientView.swift in Sources */,
 				3FC1177C28D7027200D6F42A /* ToolbarView.swift in Sources */,
 				3FBC13FB25628B61004FAE0A /* CustomColorButtonStyle.swift in Sources */,
 				3F38050E273ADA4600DB23CB /* MaterialContainerRepository.swift in Sources */,
+				3F16ECB928FF157400B6A089 /* TabViewSampleView.swift in Sources */,
 				3FBC13EE25628159004FAE0A /* ReuseStyleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +628,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -613,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -660,6 +690,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -668,7 +699,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -685,10 +716,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-FeaturesDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = Q4JYUA6UF4;
+				DEVELOPMENT_TEAM = 689286JZWP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-FeaturesDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,10 +739,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-FeaturesDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = Q4JYUA6UF4;
+				DEVELOPMENT_TEAM = 689286JZWP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-FeaturesDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

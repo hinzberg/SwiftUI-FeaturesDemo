@@ -18,7 +18,7 @@ struct SwiftUI_FeaturesDemoApp: App {
 class AppDelegate : NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        
+
         UINavigationBar.appearance().tintColor = .systemBlue
         
         //Use this if NavigationBarTitle is with Large Font
@@ -33,7 +33,7 @@ class AppDelegate : NSObject, UIApplicationDelegate {
         
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .white
         //UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .red
-        
+
         return true
     }    
 }

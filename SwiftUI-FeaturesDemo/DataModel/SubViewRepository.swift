@@ -76,6 +76,12 @@ class  SubViewRepository : ObservableObject  {
         
         data = SubViewData(view: ToolbarView(), viewTitle: "Toolbar")
         list.append(data)
+        
+        data = SubViewData(view: TabViewSampleView(), viewTitle: "TabView")
+        list.append(data)
+        
+        data = SubViewData(view: LuminanceView(), viewTitle: "Adaptive Text Color")
+        list.append(data)
     }
     
     func Filter(searchQuery:String) -> [SubViewData]

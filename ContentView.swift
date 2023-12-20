@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var searchText: String = ""
 
     init() {
+        /*
         let customAppearance = UINavigationBarAppearance()
         let appTintColor = UIColor(red: 0.8, green: 0.8, blue: 1.0, alpha: 1)
         let appNavigationTextColor = UIColor(red: 82 / 255, green: 94 / 255, blue: 145 / 255, alpha: 1)
@@ -26,9 +27,12 @@ struct ContentView: View {
         UINavigationBar.appearance().standardAppearance = customAppearance
         UINavigationBar.appearance().compactAppearance = customAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = customAppearance
+        */
     }
 
     var body: some View {
+        
+        //LuminanceView()
         
         NavigationView{
             VStack{
@@ -53,12 +57,12 @@ struct ContentView: View {
 
             }.navigationBarTitle("SwiftUI Features Demo", displayMode: .inline)
         }
+        
     }
 }
 
 struct TableCell: View {
     @State var text : String
-    
     var body: some View {
             VStack (alignment: .leading)
             {
