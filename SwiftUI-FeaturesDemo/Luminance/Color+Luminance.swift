@@ -18,7 +18,7 @@ extension Color {
         let uiColor = UIColor(self)
         uiColor.getRed(&red, green: &green, blue: &blue, alpha: nil)
                 
-        return    0.2126 * Double(red ) + 0.7152 * Double(green) + 0.0722 * Double(blue)
+        return  0.2126 * Double(red) + 0.7152 * Double(green) + 0.0722 * Double(blue)
     }
     
     func isLight() -> Bool {

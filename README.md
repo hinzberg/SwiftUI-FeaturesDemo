@@ -4,6 +4,9 @@ This is a test project to try out  features in SwiftUI. The project will be exte
 
 ## Changelog / History
 
+**2024-09-16**
+- Added sample for nested Observables
+
 **2023-12-20**
 - Adaptive Text Color added
 

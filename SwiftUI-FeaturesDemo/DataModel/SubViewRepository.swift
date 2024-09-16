@@ -82,6 +82,9 @@ class  SubViewRepository : ObservableObject  {
         
         data = SubViewData(view: LuminanceView(), viewTitle: "Adaptive Text Color")
         list.append(data)
+        
+        data = SubViewData(view: NestedObservablesView(), viewTitle: "Nested Observables")
+        list.append(data)
     }
     
     func Filter(searchQuery:String) -> [SubViewData]

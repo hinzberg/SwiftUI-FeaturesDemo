@@ -32,7 +32,7 @@ struct ContentView: View {
 
     var body: some View {
         
-        //LuminanceView()
+       // NestedObservablesView()
         
         NavigationView{
             VStack{

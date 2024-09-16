@@ -22,6 +22,10 @@
 		3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */; };
 		3F6EABA3266A06440057159C /* BlurViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EABA2266A06440057159C /* BlurViewSample.swift */; };
 		3F6EABA5266A06570057159C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EABA4266A06570057159C /* BlurView.swift */; };
+		3F8500AC2C982591003D9545 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8500AB2C982591003D9545 /* Person.swift */; };
+		3F8500AE2C982A3F003D9545 /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8500AD2C982A3F003D9545 /* Employees.swift */; };
+		3F8500B02C982BDA003D9545 /* HumanResouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8500AF2C982BDA003D9545 /* HumanResouces.swift */; };
+		3F8500B22C982C2F003D9545 /* NestedObservablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8500B12C982C2F003D9545 /* NestedObservablesView.swift */; };
 		3FA1ACC324C6243D00CFA28E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC224C6243D00CFA28E /* GridView.swift */; };
 		3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1ACC424C6270D00CFA28E /* RandomColor.swift */; };
 		3FA3044624B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3044524B076EB00884863 /* SwiftUI_FeaturesDemoApp.swift */; };
@@ -79,6 +83,10 @@
 		3F59CDCC26601EEA00EA9800 /* AuroraTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraTheme.swift; sourceTree = "<group>"; };
 		3F6EABA2266A06440057159C /* BlurViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewSample.swift; sourceTree = "<group>"; };
 		3F6EABA4266A06570057159C /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		3F8500AB2C982591003D9545 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3F8500AD2C982A3F003D9545 /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		3F8500AF2C982BDA003D9545 /* HumanResouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanResouces.swift; sourceTree = "<group>"; };
+		3F8500B12C982C2F003D9545 /* NestedObservablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedObservablesView.swift; sourceTree = "<group>"; };
 		3FA1ACC224C6243D00CFA28E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		3FA1ACC424C6270D00CFA28E /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		3FA3044224B076EB00884863 /* SwiftUI-FeaturesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-FeaturesDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +220,17 @@
 			path = BlurView;
 			sourceTree = "<group>";
 		};
+		3F8500AA2C982530003D9545 /* NestedObservables */ = {
+			isa = PBXGroup;
+			children = (
+				3F8500AB2C982591003D9545 /* Person.swift */,
+				3F8500AD2C982A3F003D9545 /* Employees.swift */,
+				3F8500AF2C982BDA003D9545 /* HumanResouces.swift */,
+				3F8500B12C982C2F003D9545 /* NestedObservablesView.swift */,
+			);
+			path = NestedObservables;
+			sourceTree = "<group>";
+		};
 		3FA1ACC124C6242600CFA28E /* Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +266,7 @@
 		3FA3044424B076EB00884863 /* SwiftUI-FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F8500AA2C982530003D9545 /* NestedObservables */,
 				3F2A183D2B3320ED008A2BAE /* Luminance */,
 				3F16ECB728FF155800B6A089 /* TabBar */,
 				3FC1177A28D7025A00D6F42A /* Toolbar */,
@@ -457,7 +477,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					3FA3044124B076EB00884863 = {
 						CreatedOnToolsVersion = 12.0;
@@ -528,6 +548,7 @@
 				3F22AA3B25A211B700C9081A /* SimpleList.swift in Sources */,
 				3FA3044824B076EB00884863 /* ContentView.swift in Sources */,
 				3F16180824D89079006DA574 /* RedactedView.swift in Sources */,
+				3F8500B22C982C2F003D9545 /* NestedObservablesView.swift in Sources */,
 				3FC9914126E3FF1D0058BB72 /* HeroAnimationView.swift in Sources */,
 				3F6EABA3266A06440057159C /* BlurViewSample.swift in Sources */,
 				3FA3047524B0881400884863 /* OutlineGroupView.swift in Sources */,
@@ -539,11 +560,14 @@
 				3FD0FA56259BCAAE00BF4BD4 /* SubViewRepository.swift in Sources */,
 				3FBC13DD256263A4004FAE0A /* HapticView.swift in Sources */,
 				3F38050A273AD83400DB23CB /* MaterialsView.swift in Sources */,
+				3F8500AC2C982591003D9545 /* Person.swift in Sources */,
 				3FFE4693253C92140065782E /* ColorPickerView.swift in Sources */,
+				3F8500B02C982BDA003D9545 /* HumanResouces.swift in Sources */,
 				3FA3047A24B0AD1A00884863 /* DisclosureGroupView.swift in Sources */,
 				3F38050C273AD9E900DB23CB /* MaterialContainer.swift in Sources */,
 				3F59CDCD26601EEA00EA9800 /* AuroraTheme.swift in Sources */,
 				3F6EABA5266A06570057159C /* BlurView.swift in Sources */,
+				3F8500AE2C982A3F003D9545 /* Employees.swift in Sources */,
 				3FA1ACC524C6270D00CFA28E /* RandomColor.swift in Sources */,
 				3FD85FF628BBE27400DE1355 /* MenuView.swift in Sources */,
 				3F2A18412B332BBD008A2BAE /* Color+Luminance.swift in Sources */,
@@ -595,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -643,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -657,6 +682,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -699,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
