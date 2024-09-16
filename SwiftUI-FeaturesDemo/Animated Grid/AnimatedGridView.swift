@@ -104,11 +104,13 @@ struct AnimatedGridView: View {
                                 }
                             }
                     }
-                }.padding(.all)
+                }
+                .padding(.all)
+                .animation(.easeOut)
             }
         }
         .navigationTitle("Animated Grid")
-        .animation(.easeOut)
+        
     }
 }
 

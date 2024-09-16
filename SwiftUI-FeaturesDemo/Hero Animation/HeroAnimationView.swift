@@ -31,7 +31,7 @@ struct HeroAnimationView: View {
                                             }
                                         }
                                 }
-                            }).animation(.spring())
+                            })
             }
             else {
                 Image(systemName: self.selectedSymbol!)
@@ -42,8 +42,6 @@ struct HeroAnimationView: View {
                             self.selectedSymbol = nil
                         }
                     }
-                    .animation(.spring())
-                
                 Spacer()
             }
         }.padding()
